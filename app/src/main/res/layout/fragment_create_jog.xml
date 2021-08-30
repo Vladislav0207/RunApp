@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.createJogFragment.CreateJogFragment">
+
+    <TextView
+        android:id="@+id/dateJogLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:gravity="bottom"
+        android:text="@string/dateLog"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateJogCreate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dateJogCreate" />
+
+    <EditText
+        android:id="@+id/dateJogCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:hint="@string/date"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintStart_toEndOf="@id/dateJogLog"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeJogLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:gravity="bottom"
+        android:text="@string/timeLog"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/timeJogCreate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeJogCreate" />
+
+    <EditText
+        android:id="@+id/timeJogCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:hint="@string/edit_time_hint"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@id/timeJogLog"
+        app:layout_constraintTop_toBottomOf="@id/dateJogLog"
+        />
+
+    <TextView
+        android:id="@+id/distanceJogLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:gravity="bottom"
+        android:text="@string/distanceLog"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/distanceJogCreate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/distanceJogCreate" />
+
+    <EditText
+        android:id="@+id/distanceJogCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:hint="@string/edit_distance_hint"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@id/distanceJogLog"
+        app:layout_constraintTop_toBottomOf="@id/timeJogLog"
+        />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/buttonCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="64dp"
+            app:cardMaxElevation="2dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/green_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/buttonCreateJog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_jog"
+                android:background="@color/green_light"/>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

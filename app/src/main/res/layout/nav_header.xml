@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/blue_light"
+    >
+
+
+    <ImageView
+        android:id="@+id/avatarImageHeader"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/firstNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_first"
+        android:textSize="22sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/avatarImageHeader"
+        app:layout_constraintTop_toTopOf="@+id/avatarImageHeader" />
+
+    <TextView
+        android:id="@+id/lastNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_last"
+        android:textSize="22sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/firstNameHeader"
+        app:layout_constraintTop_toTopOf="@+id/avatarImageHeader" />
+
+    <TextView
+        android:id="@+id/emailHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/email"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/avatarImageHeader"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameHeader" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
